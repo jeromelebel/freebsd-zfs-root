@@ -3,7 +3,7 @@
 set -x
 
 if [ "$2" == "" ] ; then
-  echo "the parameters are <zfs_file_system> <device_to_boot>
+  echo "the parameters are <zfs_file_system> <device_to_boot>"
   exit 1
 fi
 
