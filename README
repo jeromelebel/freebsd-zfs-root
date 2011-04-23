@@ -9,3 +9,4 @@ At the end you can shutdown your system, remove your original disk, and boot wit
 Of course make a backup of all your data, before using this script. This script should not touch your original freebsd system (except if there are bugs... and there are always bugs...).
 
 
+tested on FreeBSD 8.2
