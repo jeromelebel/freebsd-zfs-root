@@ -1,0 +1,11 @@
+The goal of this script is to copy your installed freebsd system into a zfs file system. Everything will be on zfs (even your /), except the /boot.
+
+To use this script, you need an USB stick (or any bootable device), and a zpool (can be mirror, raidz1, raidz2, anything).
+
+The script will copy your / into "<your_pool>/system/root" and any other partition mounted directly into / (like usr, var or tmp), into "<your_pool>/system/<partition>". And it will format your USB stick (using gpt), make it bootable and copy your /boot into it.
+
+At the end you can shutdown your system, remove your original disk, and boot with your USB stick and your zpool.
+
+Of course make a backup of all your data, before using this script. This script should not touch your original freebsd system (except if there are bugs... and there are always bugs...).
+
+
